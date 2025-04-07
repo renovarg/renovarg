@@ -1,77 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RenovARG | Educación y comunidad</title>
-   <style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
-                url("assets/fondo1.png") no-repeat center center fixed;
-    background-size: cover;
-    background-blend-mode: lighten;
-    filter: brightness(80%) blur(1.5px);
-    font-size: 16px;
-    line-height: 1.6;
-    color: #1e293b;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RenovARG</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.95)),
+                  url('assets/fondo de pagina1.png') no-repeat center center fixed;
+      background-size: cover;
+      background-blend-mode: soft-light;
+      color: #222;
+    }
 
-  header, main, footer {
-    background-color: rgba(255, 255, 255, 0.92);
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 960px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  }
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-  h1, h2, h3 {
-    color: #065f46;
-    margin-top: 0;
-  }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #2d6a4f;
+      font-weight: bold;
+    }
 
-  a {
-    color: #0e7490;
-    text-decoration: none;
-  }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RenovARG</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#whitepaper">Whitepaper</a>
+      <a href="#quienes">Quiénes Somos</a>
+      <a href="#participa">Participá</a>
+      <a href="#redes">Redes Sociales</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
+  <div class="container">
+    <section id="inicio">
+      <h2>Inicio</h2>
+      <p>Bienvenido a RenovARG, el proyecto comunitario que une energías renovables, educación y tecnología para transformar el futuro desde Argentina.</p>
+    </section>
 
-    <header>
-        <h1>RenovARG</h1>
-        <p>Educación y comunidad para un futuro sustentable</p>
-    </header>
+    <section id="whitepaper">
+      <h2>Whitepaper</h2>
+      <p><a href="whitepaper.pdf" target="_blank">Descargar el Whitepaper (PDF)</a></p>
+    </section>
 
-    <main>
-        <img src="logo.png" alt="Logo RenovARG" class="logo">
+    <section id="quienes">
+      <h2>Quiénes Somos</h2>
+      <p>Somos una comunidad abierta desde la Patagonia con visión federal y latinoamericana, comprometida con la transición energética justa.</p>
+    </section>
 
-        <h2>Un token con propósito, nacido en la Patagonia y pensado para todo el país 🌎</h2>
+    <section id="participa">
+      <h2>Participá</h2>
+      <p>Podés participar aprendiendo, enseñando, divulgando o impulsando acciones locales. ¡Tu energía suma!</p>
+    </section>
 
-        <p>
-            RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.
-        </p>
-        <p>
-            Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.
-        </p>
-        <p>
-            Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.
-        </p>
+    <section id="redes">
+      <h2>Redes Sociales</h2>
+      <ul>
+        <li><a href="https://x.com/ArgRenov" target="_blank">X (Twitter)</a></li>
+        <!-- Agregá más redes si las tenés -->
+      </ul>
+    </section>
 
-        <a class="btn" href="https://x.com/ArgRenov" target="_blank">👉 Seguí el proyecto en X</a>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Correo: renovarg.proyecto@gmail.com</p>
+    </section>
+  </div>
 
-        <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
-    </main>
-
-    <footer>
-        © 2025 RenovARG | renovarg.proyecto@gmail.com
-    </footer>
-
+  <footer>
+    <p>© 2025 RenovARG — Energía que nos conecta.</p>
+  </footer>
 </body>
 </html>
