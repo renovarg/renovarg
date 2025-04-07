@@ -4,50 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RenovARG | Educación y comunidad</title>
- 
-    
     <style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: url("fondo1.png") no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-  }
-
-  /* Overlay suave encima del fondo */
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.7); /* Blanco con transparencia */
-    z-index: 0;
-  }
-
-  main, header, footer {
-    position: relative;
-    z-index: 1;
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  }
-
-  h1, h2, h3 {
-    text-align: center;
-    margin-top: 0;
-  }
-
-  a {
-    color: #0077cc;
-  }
-</style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #e6f8f8;
+            color: #003f3f;
+            text-align: center;
+        }
+        header {
+            background: #005b4f;
+            color: white;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+        .logo {
+            margin: 2rem auto 1rem;
+            max-width: 300px;
+        }
+        main {
+            padding: 1rem 2rem;
+        }
+        main h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        main p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+        }
+        .btn {
+            background-color: #00a389;
+            color: white;
+            padding: 0.8rem 1.6rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        footer {
+            background: #005b4f;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .frase-impacto {
+            font-style: italic;
+            margin-top: 2rem;
+            color: #007d6a;
+        }
+    </style>
 </head>
 <body>
 
