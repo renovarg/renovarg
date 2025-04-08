@@ -156,6 +156,55 @@
       transform: scale(1.1);
       opacity: 1;
     }
+    .contacto {
+  padding: 40px 20px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #004d40;
+}
+
+.contacto p {
+  margin-bottom: 20px;
+  color: #003f3f;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contacto button {
+  background-color: #00a389;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contacto button:hover {
+  background-color: #007d6a;
+}
   </style>
 </head>
 <body>
@@ -206,7 +255,16 @@
     <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
     <img src="assets/hoja de ruta.png" alt="Hoja de ruta de RenovARG" class="roadmap-img">
   </section>
-
+<section id="contacto" class="contacto">
+  <h2>📬 Contactanos</h2>
+  <p>¿Querés sumar tu energía? Escribinos y conectemos ideas.</p>
+  <form action="https://formspree.io/f/tu_codigo_aqui" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required />
+    <input type="email" name="email" placeholder="Tu correo electrónico" required />
+    <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
   <footer>
     © 2025 RenovARG | renovarg.proyecto@gmail.com
     <div class="redes-sociales">
