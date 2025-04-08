@@ -15,7 +15,6 @@
       overflow-x: hidden;
     }
 
-    /* Fondo translúcido con imagen */
     body::before {
       content: "";
       background: url('assets/fondo1.png') no-repeat center center fixed;
@@ -79,6 +78,40 @@
       cursor: pointer;
     }
 
+    .frase-impacto {
+      font-style: italic;
+      margin-top: 2rem;
+      color: #007d6a;
+    }
+
+    .roadmap {
+      padding: 40px 20px;
+      background-color: #ffffffcc;
+      border-radius: 16px;
+      max-width: 900px;
+      margin: 40px auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .roadmap h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #004d40;
+    }
+
+    .roadmap p {
+      font-size: 1.1em;
+      color: #003f3f;
+      margin-bottom: 20px;
+    }
+
+    .roadmap-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
     footer {
       background: #00bcd4;
       color: white;
@@ -86,105 +119,77 @@
       margin-top: 2rem;
     }
 
-    .frase-impacto {
-      font-style: italic;
-      margin-top: 2rem;
-      color: #007d6a;
-    }
     .redes-sociales {
-    margin-top: 1rem;
-}
+      margin-top: 1rem;
+    }
 
-.icono-red {
-    width: 32px;
-    height: 32px;
-    margin: 0 10px;
-    filter: invert(1);
-    opacity: 0.8;
-    transition: transform 0.2s ease;
-}
+    .icono-red {
+      width: 32px;
+      height: 32px;
+      margin: 0 10px;
+      filter: invert(1);
+      opacity: 0.8;
+      transition: transform 0.2s ease;
+    }
 
-.icono-red:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-    .roadmap {
-  padding: 40px 20px;
-  background-color: #ffffffcc;
-  border-radius: 16px;
-  max-width: 900px;
-  margin: 40px auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.roadmap h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #004d40;
-}
-
-.roadmap p {
-  font-size: 1.1em;
-  color: #003f3f;
-  margin-bottom: 20px;
-}
-
-.roadmap-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
+    .icono-red:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
   </style>
 </head>
+
 <body>
-<section>
-  <p>Conocé el documento fundacional de nuestro proyecto:</p>
-  <a class="btn" href="assets/Whitepaper_RenovARG_Version_Final.pdf" target="_blank">📄 Leer el Whitepaper</a>
-</section>
-  <section class="roadmap">
- <h2>📘 Hoja de Ruta</h2>
-<p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
-<img src="assets/hoja de ruta.png" alt="Hoja de ruta de RenovARG" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-</section>
+
+  <!-- Encabezado principal -->
   <header>
     <h1>RenovARG</h1>
     <p>Educación y comunidad para un futuro sustentable</p>
   </header>
 
+  <!-- Contenido principal -->
   <main>
-    <img src="logo.png" alt="Logo RenovARG" class="logo" />
 
+    <!-- Logo -->
+    <img src="assets/logo.png" alt="Logo RenovARG" class="logo" />
+
+    <!-- Presentación -->
     <h2>Un token con propósito, nacido en la Patagonia y pensado para todo el país 🌎</h2>
+    <p>RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.</p>
+    <p>Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.</p>
+    <p>Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.</p>
 
-    <p>
-      RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.
-    </p>
-    <p>
-      Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.
-    </p>
-    <p>
-      Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.
-    </p>
+    <!-- Whitepaper -->
+    <p>Conocé el documento fundacional de nuestro proyecto:</p>
+    <a class="btn" href="assets/Whitepaper_RenovARG_Version_Final.pdf" target="_blank">📄 Leer el Whitepaper</a>
 
+    <!-- Hoja de ruta -->
+    <section class="roadmap">
+      <h2>📘 Hoja de Ruta</h2>
+      <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
+      <img src="assets/hoja de ruta.png" alt="Hoja de ruta de RenovARG" class="roadmap-img" />
+    </section>
+
+    <!-- Frase -->
+    <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
+
+    <!-- Redes sociales -->
     <a class="btn" href="https://x.com/ArgRenov" target="_blank">👉 Seguí el proyecto en X</a>
 
-    <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
   </main>
 
+  <!-- Pie de página -->
   <footer>
     © 2025 RenovARG | renovarg.proyecto@gmail.com
     <div class="redes-sociales">
-    <a href="https://x.com/ArgRenov" target="_blank" title="Seguinos en X">
+      <a href="https://x.com/ArgRenov" target="_blank" title="Seguinos en X">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" class="icono-red">
-    </a>
-    <a href="https://www.youtube.com/@RenovArg" target="_blank" title="Nuestro canal de YouTube">
+      </a>
+      <a href="https://www.youtube.com/@RenovArg" target="_blank" title="Nuestro canal de YouTube">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" class="icono-red">
-    </a>
-    <!-- Acá podés seguir agregando más redes como Instagram, Facebook, etc -->
-</div>
-
+      </a>
+      <!-- Podés sumar Instagram, Facebook, etc. -->
+    </div>
   </footer>
 
 </body>
