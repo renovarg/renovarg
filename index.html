@@ -1,364 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RenovARG | Educación y comunidad</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e6f8f8;
-      color: #003f3f;
-      text-align: center;
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      background: url('assets/fondo1.png') no-repeat center center fixed;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.15;
-      z-index: -1;
-    }
-
-    nav {
-      background: #007d6a;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #d9f8f1;
-    }
-
-    header {
-      background: #00bcd4;
-      color: white;
-      padding: 2rem 1rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin: 0.5rem 0 0;
-    }
-
-    .logo {
-      margin: 2rem auto 1rem;
-      max-width: 300px;
-    }
-
-    main {
-      padding: 1rem 2rem;
-    }
-
-    main h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    main p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 0 auto 1.5rem;
-      line-height: 1.6;
-    }
-
-    .btn {
-      background-color: #00a389;
-      color: white;
-      padding: 0.8rem 1.6rem;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-
-    .frase-impacto {
-      font-style: italic;
-      margin-top: 2rem;
-      color: #007d6a;
-    }
-
-    .roadmap {
-      padding: 40px 20px;
-      background-color: #ffffffcc;
-      border-radius: 16px;
-      max-width: 900px;
-      margin: 40px auto;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .roadmap h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-      color: #004d40;
-    }
-
-    .roadmap p {
-      font-size: 1.1em;
-      color: #003f3f;
-      margin-bottom: 20px;
-    }
-
-    .roadmap-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    footer {
-      background: #00bcd4;
-      color: white;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    .redes-sociales {
-      margin-top: 1rem;
-    }
-
-    .icono-red {
-      width: 32px;
-      height: 32px;
-      margin: 0 10px;
-      filter: invert(1);
-      opacity: 0.8;
-      transition: transform 0.2s ease;
-    }
-
-    .icono-red:hover {
-      transform: scale(1.1);
-      opacity: 1;
-    }
-    .contacto {
-  padding: 40px 20px;
-  background: #ffffffcc;
-  border-radius: 16px;
-  max-width: 700px;
-  margin: 40px auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.contacto h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #004d40;
-}
-
-.contacto p {
-  margin-bottom: 20px;
-  color: #003f3f;
-}
-
-.contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contacto input,
-.contacto textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  resize: vertical;
-}
-
-.contacto button {
-  background-color: #00a389;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.contacto button:hover {
-  background-color: #007d6a;
-}
-    .participar {
-  background-color: #ffffffdd;
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 40px auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.participar h2 {
-  color: #00695c;
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.participar ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.participar li {
-  margin-bottom: 15px;
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.participar strong {
-  color: #00796b;
-}
-#participar {
-  padding: 60px 20px;
-  background-color: #ffffffcc;
-  border-radius: 16px;
-  max-width: 1000px;
-  margin: 60px auto;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.participar-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.participar-grid .card {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-
-.participar-grid .card:hover {
-  transform: translateY(-5px);
-}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RenovARG</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-  <!-- Barra de navegación -->
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#whitepaper">Whitepaper</a>
-    <a href="#roadmap">Hoja de Ruta</a>
-    <a href="https://x.com/ArgRenov" target="_blank">X (Twitter)</a>
-    <a href="https://www.youtube.com/@RenovArg" target="_blank">YouTube</a>
-    <a href="#participar">¿Cómo participar?</a>
-  </nav>
-
-  <header id="inicio">
+  <header>
     <h1>RenovARG</h1>
-    <p>Educación y comunidad para un futuro sustentable</p>
+    <nav>
+      <ul>
+        <li><a href="#whitepaper">Whitepaper</a></li>
+        <li><a href="#participar">¿Cómo participar?</a></li>
+        <li><a href="#equipo">Equipo / Comunidad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <img src="assets/logo.png" alt="Logo RenovARG" class="logo" />
+    <section id="whitepaper">
+      <h2>Whitepaper</h2>
+      <p>Accedé a nuestro whitepaper para conocer la visión completa del proyecto RenovARG.</p>
+      <a href="whitepaper.pdf" target="_blank">Descargar Whitepaper</a>
+    </section>
 
-    <h2>Un token con propósito, nacido en la Patagonia y pensado para todo el país 🌎</h2>
-
-    <p>
-      RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.
-    </p>
-    <p>
-      Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.
-    </p>
-    <p>
-      Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.
-    </p>
-
-    <a class="btn" href="https://x.com/ArgRenov" target="_blank">👉 Seguí el proyecto en X</a>
-
-    <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
     <section id="participar">
-  <h2>🤝 ¿Cómo participar?</h2>
-  <p>RenovARG es un proyecto abierto y colaborativo. Hay muchas formas de sumarte y aportar desde donde estés:</p>
-  <div class="participar-grid">
-    <div class="card">
-      <h3>📘 Aprender</h3>
-      <p>Accedé a contenidos educativos sobre energías renovables y sostenibilidad.</p>
-    </div>
-    <div class="card">
-      <h3>📣 Difundir</h3>
-      <p>Compartí nuestras publicaciones y ayudanos a llegar a más personas.</p>
-    </div>
-    <div class="card">
-      <h3>💡 Proponer ideas</h3>
-      <p>Colaborá con propuestas, proyectos o sugerencias que ayuden a crecer RenovARG.</p>
-    </div>
-    <div class="card">
-      <h3>🎁 Apoyar</h3>
-      <p>Próximamente vas a poder participar con nuestro token y acceder a recompensas.</p>
-    </div>
-  </div>
-</section>
+      <h2>¿Cómo participar?</h2>
+      <ul>
+        <li><strong>Aprender:</strong> Accedé a contenidos educativos sobre energías renovables.</li>
+        <li><strong>Difundir:</strong> Compartí nuestros materiales y ayudanos a llegar más lejos.</li>
+        <li><strong>Proponer ideas:</strong> Sumá tu creatividad para enriquecer el proyecto.</li>
+        <li><strong>Apoyar:</strong> Participá de futuras recompensas vinculadas al token RenovARG.</li>
+      </ul>
+    </section>
+
+    <section id="equipo">
+      <h2>Equipo y Comunidad</h2>
+      <h3>✨ Fundador</h3>
+      <p><strong>Damián Ariel Burgos</strong><br>
+      Impulsor de RenovARG. Técnico en formación, apasionado por las energías renovables y el poder de la comunidad para transformar realidades. Desde Gaiman, Chubut, con visión federal y espíritu colaborativo.</p>
+
+      <h3>🤝 Comunidad en formación</h3>
+      <p>Creemos en el poder de las ideas compartidas. Si te mueve el mismo viento, sumate:</p>
+      <ul>
+        <li>Aprendé con nosotros</li>
+        <li>Difundí contenidos</li>
+        <li>Proponé ideas</li>
+        <li>Participá de futuras recompensas</li>
+      </ul>
+      <blockquote>🌟 <em>¡Vos también podés ser parte del equipo que impulsa el cambio energético en Argentina!</em></blockquote>
+      <p>📩 <strong>Escribinos</strong> desde el formulario de contacto y contanos cómo te gustaría colaborar.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Querés sumar tu energía? Escribinos y conectemos ideas.</p>
+      <form action="https://formspree.io/f/xdoqvjej" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
-  <!-- Whitepaper -->
-  <section id="whitepaper">
-    <p>Conocé el documento fundacional de nuestro proyecto:</p>
-    <a class="btn" href="assets/Whitepaper_RenovARG_Version_Final.pdf" target="_blank">📄 Leer el Whitepaper</a>
-  </section>
-
-  <!-- Roadmap -->
-  <section class="roadmap" id="roadmap">
-    <h2>📘 Hoja de Ruta</h2>
-    <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
-    <img src="assets/hoja de ruta.png" alt="Hoja de ruta de RenovARG" class="roadmap-img">
-  </section>
-<section id="contacto" class="contacto">
-  <h2>📬 Contactanos</h2>
-  <p>¿Querés sumar tu energía? Escribinos y conectemos ideas.</p>
-  <form action=https://formspree.io/f/xnnpornn method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre" required />
-    <input type="email" name="email" placeholder="Tu correo electrónico" required />
-    <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
   <footer>
-    © 2025 RenovARG | renovarg.proyecto@gmail.com
-    <div class="redes-sociales">
-      <a href="https://x.com/ArgRenov" target="_blank" title="Seguinos en X">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" class="icono-red">
-      </a>
-      <a href="https://www.youtube.com/@RenovArg" target="_blank" title="Nuestro canal de YouTube">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" class="icono-red">
-      </a>
+    <div class="social">
+      <a href="https://x.com/ArgRenov" target="_blank">X</a>
+      <a href="https://www.youtube.com/@RenovArg" target="_blank">YouTube</a>
     </div>
+    <p>© 2025 RenovARG. Todos los derechos reservados.</p>
   </footer>
-
 </body>
+
 </html>
