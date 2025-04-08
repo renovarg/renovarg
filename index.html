@@ -28,6 +28,26 @@
       z-index: -1;
     }
 
+    nav {
+      background: #007d6a;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d9f8f1;
+    }
+
     header {
       background: #00bcd4;
       color: white;
@@ -138,47 +158,55 @@
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Encabezado principal -->
-  <header>
+  <!-- Barra de navegación -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#whitepaper">Whitepaper</a>
+    <a href="#roadmap">Hoja de Ruta</a>
+    <a href="https://x.com/ArgRenov" target="_blank">X (Twitter)</a>
+    <a href="https://www.youtube.com/@RenovArg" target="_blank">YouTube</a>
+  </nav>
+
+  <header id="inicio">
     <h1>RenovARG</h1>
     <p>Educación y comunidad para un futuro sustentable</p>
   </header>
 
-  <!-- Contenido principal -->
   <main>
-
-    <!-- Logo -->
     <img src="assets/logo.png" alt="Logo RenovARG" class="logo" />
 
-    <!-- Presentación -->
     <h2>Un token con propósito, nacido en la Patagonia y pensado para todo el país 🌎</h2>
-    <p>RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.</p>
-    <p>Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.</p>
-    <p>Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.</p>
 
-    <!-- Whitepaper -->
-    <p>Conocé el documento fundacional de nuestro proyecto:</p>
-    <a class="btn" href="assets/Whitepaper_RenovARG_Version_Final.pdf" target="_blank">📄 Leer el Whitepaper</a>
+    <p>
+      RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.
+    </p>
+    <p>
+      Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.
+    </p>
+    <p>
+      Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.
+    </p>
 
-    <!-- Hoja de ruta -->
-    <section class="roadmap">
-      <h2>📘 Hoja de Ruta</h2>
-      <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
-      <img src="assets/hoja de ruta.png" alt="Hoja de ruta de RenovARG" class="roadmap-img" />
-    </section>
-
-    <!-- Frase -->
-    <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
-
-    <!-- Redes sociales -->
     <a class="btn" href="https://x.com/ArgRenov" target="_blank">👉 Seguí el proyecto en X</a>
 
+    <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
   </main>
 
-  <!-- Pie de página -->
+  <!-- Whitepaper -->
+  <section id="whitepaper">
+    <p>Conocé el documento fundacional de nuestro proyecto:</p>
+    <a class="btn" href="assets/Whitepaper_RenovARG_Version_Final.pdf" target="_blank">📄 Leer el Whitepaper</a>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="roadmap" id="roadmap">
+    <h2>📘 Hoja de Ruta</h2>
+    <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
+    <img src="assets/hoja de ruta.png" alt="Hoja de ruta de RenovARG" class="roadmap-img">
+  </section>
+
   <footer>
     © 2025 RenovARG | renovarg.proyecto@gmail.com
     <div class="redes-sociales">
@@ -188,7 +216,6 @@
       <a href="https://www.youtube.com/@RenovArg" target="_blank" title="Nuestro canal de YouTube">
         <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" class="icono-red">
       </a>
-      <!-- Podés sumar Instagram, Facebook, etc. -->
     </div>
   </footer>
 
