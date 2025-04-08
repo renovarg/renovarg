@@ -1,102 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RenovARG | Educación y comunidad</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: white;
-            color: #003f3f;
-            text-align: center;
-        }
-        header {
-            background:  #87CEEB;
-            color: white;
-            padding: 2rem 1rem;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin: 0.5rem 0 0;
-        }
-        .logo {
-            margin: 2rem auto 1rem;
-            max-width: 300px;
-        }
-        main {
-            padding: 1rem 2rem;
-        }
-        main h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        main p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto 1.5rem;
-            line-height: 1.6;
-        }
-        .btn {
-            background-color: #00a389;
-            color: white;
-            padding: 0.8rem 1.6rem;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
-            cursor: pointer;
-        }
-        footer {
-            background: #005b4f;
-            color: white;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-        .frase-impacto {
-            font-style: italic;
-            margin-top: 2rem;
-            color: #007d6a;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RenovARG | Educación y comunidad</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f8f8;
+      color: #003f3f;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Fondo translúcido con imagen */
+    body::before {
+      content: "";
+      background: url('fondo1.png') no-repeat center center fixed;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15;
+      z-index: -1;
+      /* Si querés un leve desenfoque, descomentá esta línea ↓ */
+      /* filter: blur(2px); */
+    }
+
+    header {
+      background: #00bcd4; /* celeste en vez de verde */
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+
+    .logo {
+      margin: 2rem auto 1rem;
+      max-width: 300px;
+    }
+
+    main {
+      padding: 1rem 2rem;
+    }
+
+    main h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background-color: #00a389;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #00bcd4; /* celeste también aquí */
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .frase-impacto {
+      font-style: italic;
+      margin-top: 2rem;
+      color: #007d6a;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>RenovARG</h1>
-        <p>Educación y comunidad para un futuro sustentable</p>
-    </header>
+  <header>
+    <h1>RenovARG</h1>
+    <p>Educación y comunidad para un futuro sustentable</p>
+  </header>
 
-    <main>
-        <img src="logo.png" alt="Logo RenovARG" class="logo">
+  <main>
+    <img src="logo.png" alt="Logo RenovARG" class="logo" />
 
-        <h2>Un token con propósito, nacido en la Patagonia y pensado para todo el país 🌎</h2>
+    <h2>Un token con propósito, nacido en la Patagonia y pensado para todo el país 🌎</h2>
 
-        <p>
-            RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.
-        </p>
-        <p>
-            Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.
-        </p>
-        <p>
-            Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.
-        </p>
+    <p>
+      RenovARG es un proyecto educativo y comunitario argentino que une tecnología, conocimiento y participación ciudadana para impulsar la transición hacia energías renovables.
+    </p>
+    <p>
+      Creemos en la fuerza del aprendizaje colectivo, en la acción desde los territorios y en el poder de las redes para transformar realidades.
+    </p>
+    <p>
+      Desde lo local hacia lo global, desde lo educativo hacia lo práctico, RenovARG te invita a ser parte.
+    </p>
 
-        <a class="btn" href="https://x.com/ArgRenov" target="_blank">👉 Seguí el proyecto en X</a>
+    <a class="btn" href="https://x.com/ArgRenov" target="_blank">👉 Seguí el proyecto en X</a>
 
-        <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
-    </main>
+    <p class="frase-impacto">“El futuro será renovable, o no será.”<br>— RenovARG</p>
+  </main>
 
-    <footer>
-        © 2025 RenovARG | renovarg.proyecto@gmail.com
-    </footer>
+  <footer>
+    © 2025 RenovARG | renovarg.proyecto@gmail.com
+  </footer>
 
 </body>
 </html>
