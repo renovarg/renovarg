@@ -83,6 +83,67 @@
 .blog-post .leer-mas:hover {
   background-color: #27ae60;
 }
+  
+/* Contenedor general */
+.blog-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Tarjetas */
+.blog-card {
+  background: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen miniatura */
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Contenido de la tarjeta */
+.blog-content {
+  padding: 1rem;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.blog-meta {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 0.75rem;
+}
+
+.blog-tags {
+  margin-top: 0.5rem;
+}
+
+.blog-tags span {
+  background: #27ae60;
+  color: white;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.3rem;
+  font-size: 0.75rem;
+}
+
   </style>
 </head>
 
@@ -131,23 +192,19 @@
 <section class="blog-section" id="blog">
   <h2>Últimas noticias y artículos</h2>
 
-  <div class="blog-post">
-    <img src="https://images.unsplash.com/photo-1581092919535-0c07b1a3c00d?auto=format&fit=crop&w=800&q=80" alt="Blog 1" />
-    <h2>¿Por qué es hora de hablar de energía comunitaria?</h2>
-    <p><strong>📅 Fecha:</strong> 6 de abril de 2025 &nbsp;&nbsp; <strong>👤 Autor:</strong> RenovARG</p>
-    <p><strong>🏷️ Etiquetas:</strong> Energía comunitaria, Educación, Participación</p>
-    <p>La energía es un derecho, no un privilegio. En este artículo exploramos por qué empoderar a comunidades con energías renovables es clave para un futuro sostenible...</p>
-    <a class="leer-mas" href="articulo1.html">📖 Leer el artículo completo</a>
+  <div class="blog-card">
+  <img src="img/solar-panel.jpg" alt="Miniatura artículo 1">
+  <div class="blog-content">
+    <a href="articulo1.html" class="blog-title">Energía Solar en Patagonia</a>
+    <div class="blog-meta">📅 9 de abril, 2025 | ✍️ Por RenovARG</div>
+    <p>Exploramos el impacto y el potencial de la energía solar en las comunidades del sur argentino.</p>
+    <div class="blog-tags">
+      <span>Solar</span>
+      <span>Educación</span>
+    </div>
   </div>
+</div>
 
-  <div class="blog-post">
-    <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80" alt="Blog 2" />
-    <h2>Las energías renovables no son el futuro... son el presente</h2>
-    <p><strong>📅 Fecha:</strong> 9 de abril de 2025 &nbsp;&nbsp; <strong>👤 Autor:</strong> RenovARG</p>
-    <p><strong>🏷️ Etiquetas:</strong> Energía solar, Sostenibilidad, Cambio climático</p>
-    <p>Durante años las energías limpias fueron vistas como una promesa futura. Hoy, son una realidad que se instala en hogares y comunidades. Este artículo celebra ese presente...</p>
-    <a class="leer-mas" href="articulo2.html">📖 Leer el artículo completo</a>
-  </div>
 </section>
 
   <footer>
