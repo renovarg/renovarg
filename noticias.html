@@ -3,210 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <title>Noticias - RenovARG</title>
-  <style>
-    <style>
-/* Contenedor general */
-.blog-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
+ <style>
+  /* Fuente general */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f7fdfc;
+    margin: 0;
+    padding: 0;
+    color: #222;
+  }
 
-/* Tarjetas */
-.blog-card {
-  background: #f5f5f5;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
+  h1, h2, h3 {
+    font-weight: 600;
+    color: #003d33;
+  }
 
-.blog-card:hover {
-  transform: translateY(-5px);
-}
+  a {
+    text-decoration: none;
+    color: #00796b;
+  }
 
-/* Imagen miniatura */
-.blog-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
+  a:hover {
+    color: #004d40;
+    text-decoration: underline;
+  }
 
-/* Contenido de la tarjeta */
-.blog-content {
-  padding: 1rem;
-}
+  .blog-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+  }
 
-.blog-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-  text-decoration: none;
-}
+  .blog-post {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 25px;
+    margin-bottom: 40px;
+    transition: transform 0.2s ease-in-out;
+  }
 
-.blog-meta {
-  font-size: 0.85rem;
-  color: #7f8c8d;
-  margin-bottom: 0.75rem;
-}
+  .blog-post:hover {
+    transform: translateY(-4px);
+  }
 
-.blog-tags {
-  margin-top: 0.5rem;
-}
+  .blog-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #004d40;
+  }
 
-.blog-tags span {
-  background: #27ae60;
-  color: white;
-  border-radius: 5px;
-  padding: 0.2rem 0.5rem;
-  margin-right: 0.3rem;
-  font-size: 0.75rem;
-}
+  .blog-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .blog-tags {
+    font-size: 0.85rem;
+    color: #388e3c;
+    margin-top: 10px;
+  }
+
+  .blog-tags span {
+    background-color: #e8f5e9;
+    border-radius: 20px;
+    padding: 4px 10px;
+    margin-right: 6px;
+    display: inline-block;
+  }
+
+  .blog-excerpt {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+  }
+
+  .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+
+  .read-more:hover {
+    background-color: #004d40;
+  }
+
+  /* Responsive ajustes */
+  @media (max-width: 768px) {
+    .blog-container {
+      padding: 10px;
+    }
+
+    .blog-title {
+      font-size: 1.4rem;
+    }
+  }
 </style>
 
-    .blog-section {
-      background: #f0f4f8;
-      padding: 4rem 2rem;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .blog-section h2 {
-      font-size: 2rem;
-      color: #0a3d62;
-      margin-bottom: 1rem;
-    }
-    .blog-post {
-      background: white;
-      border-radius: 16px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .blog-post h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-    .blog-post p {
-      font-size: 1rem;
-      color: #333;
-      line-height: 1.6;
-    }
-    .blog-post .leer-mas {
-      display: inline-block;
-      margin-top: 1rem;
-      color: white;
-      background-color: #2ecc71;
-      padding: 0.5rem 1rem;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .blog-post .leer-mas:hover {
-      background-color: #27ae60;
-    }
-    .blog-section img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.blog-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #0a3d62;
-}
-
-.blog-post h2 {
-  font-size: 1.5rem;
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
-}
-
-.blog-post p {
-  margin: 0.4rem 0;
-  color: #333;
-  line-height: 1.5;
-}
-
-.blog-post .leer-mas {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #2ecc71;
-  color: white;
-  padding: 0.6rem 1rem;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.blog-post .leer-mas:hover {
-  background-color: #27ae60;
-}
-  
-/* Contenedor general */
-.blog-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
-
-/* Tarjetas */
-.blog-card {
-  background: #f5f5f5;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Imagen miniatura */
-.blog-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-/* Contenido de la tarjeta */
-.blog-content {
-  padding: 1rem;
-}
-
-.blog-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #2c3e50;
-  text-decoration: none;
-}
-
-.blog-meta {
-  font-size: 0.85rem;
-  color: #7f8c8d;
-  margin-bottom: 0.75rem;
-}
-
-.blog-tags {
-  margin-top: 0.5rem;
-}
-
-.blog-tags span {
-  background: #27ae60;
-  color: white;
-  border-radius: 5px;
-  padding: 0.2rem 0.5rem;
-  margin-right: 0.3rem;
-  font-size: 0.75rem;
-}
-
-  </style>
 </head>
 
 <body>
