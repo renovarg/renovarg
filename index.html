@@ -376,6 +376,45 @@
 .novedades a:hover {
   text-decoration: underline;
 }
+    .timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.evento {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: #ffffffcc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.icono {
+  font-size: 2rem;
+  margin-top: 4px;
+  color: #00a389;
+  flex-shrink: 0;
+}
+
+.evento h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #004d40;
+}
+
+.evento p {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  color: #003f3f;
+}
   </style>
 </head>
 <body>
@@ -521,35 +560,47 @@
   }
 </style>
 
-<section id="roadmap">
-  <h2>📘 Roadmap RenovARG</h2>
+<!-- Roadmap visual con íconos -->
+<section class="roadmap" id="roadmap">
+  <h2>📘 Hoja de Ruta</h2>
+  <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
+  
   <div class="timeline">
-
-    <div class="timeline-entry left">
-      <h3>✅ Fase 1 – Lanzamiento Digital (abril 2025)</h3>
-      <p>Creación del sitio web, redes sociales y whitepaper. Inicio de comunidad y campaña educativa.</p>
+    <div class="evento">
+      <span class="icono">🌱</span>
+      <div>
+        <h3>FASE 1: Presencia Digital</h3>
+        <p>Lanzamiento del sitio web, redes sociales, whitepaper y comunidad inicial.</p>
+      </div>
     </div>
-
-    <div class="timeline-entry right">
-      <h3>🔄 Fase 2 – Token Comunitario</h3>
-      <p>Lanzamiento oficial del token en Solana. Casos de uso: educación, recompensas y participación.</p>
+    <div class="evento">
+      <span class="icono">🪙</span>
+      <div>
+        <h3>FASE 2: Token Comunitario</h3>
+        <p>Creación y distribución del token RenovARG en la red Solana.</p>
+      </div>
     </div>
-
-    <div class="timeline-entry left">
-      <h3>🧠 Fase 3 – Plataforma Educativa</h3>
-      <p>Desarrollo de módulos educativos, foros de intercambio y contenidos accesibles para todo el país.</p>
+    <div class="evento">
+      <span class="icono">📚</span>
+      <div>
+        <h3>FASE 3: Plataforma Educativa</h3>
+        <p>Generación de contenidos sobre energías renovables y participación ciudadana.</p>
+      </div>
     </div>
-
-    <div class="timeline-entry right">
-      <h3>🌱 Fase 4 – Comunidad Activa</h3>
-      <p>Activación de votaciones comunitarias (Snapshot/Realms) y primeras recompensas simbólicas.</p>
+    <div class="evento">
+      <span class="icono">🗳️</span>
+      <div>
+        <h3>FASE 4: Gobernanza Comunitaria</h3>
+        <p>Implementación de votaciones en plataformas como Snapshot o Realms.</p>
+      </div>
     </div>
-
-    <div class="timeline-entry left">
-      <h3>🚀 Fase 5 – Expansión Regional</h3>
-      <p>Colaboraciones con instituciones educativas y proyectos sustentables en distintas provincias.</p>
+    <div class="evento">
+      <span class="icono">🔌</span>
+      <div>
+        <h3>FASE 5: Integración con Servicios</h3>
+        <p>Explorar alianzas para utilizar el token en proyectos sustentables reales.</p>
+      </div>
     </div>
-
   </div>
 </section>
 
