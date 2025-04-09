@@ -266,53 +266,74 @@
   transform: translateY(-5px);
 }
     .transparencia {
-  background-color: #ffffffdd;
-  padding: 40px 20px;
+  background-color: #e0f7fa;
+  padding: 40px 30px;
   max-width: 900px;
   margin: 40px auto;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .transparencia h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #004d40;
+  color: #00695c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .transparencia p {
   font-size: 1.1rem;
   margin-bottom: 20px;
+  color: #004d40;
   line-height: 1.6;
-  color: #003f3f;
 }
 
 .transparencia ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .transparencia li {
   margin-bottom: 15px;
-  font-size: 1.05rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   position: relative;
+  font-size: 1.05rem;
+  color: #003c3c;
 }
 
 .transparencia li::before {
-  content: "✔️";
   position: absolute;
   left: 0;
+  font-size: 1.2rem;
+}
+
+.transparencia li:nth-child(1)::before {
+  content: "🔑";
+}
+
+.transparencia li:nth-child(2)::before {
+  content: "🚫";
+}
+
+.transparencia li:nth-child(3)::before {
+  content: "🧩";
+}
+
+.transparencia li:nth-child(4)::before {
+  content: "📊";
 }
 
 .transparencia .frase-impacto {
+  margin-top: 30px;
   text-align: center;
   font-style: italic;
-  margin-top: 30px;
   color: #00796b;
+  font-size: 1.1rem;
 }
   </style>
 </head>
