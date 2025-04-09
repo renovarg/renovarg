@@ -415,6 +415,21 @@
   font-size: 1rem;
   color: #003f3f;
 }
+    .timeline-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
   </style>
 </head>
 <body>
@@ -564,46 +579,37 @@
 <section class="roadmap" id="roadmap">
   <h2>📘 Hoja de Ruta</h2>
   <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
-  
-  <div class="timeline">
-    <div class="evento">
-      <span class="icono">🌱</span>
-      <div>
-        <h3>FASE 1: Presencia Digital</h3>
-        <p>Lanzamiento del sitio web, redes sociales, whitepaper y comunidad inicial.</p>
-      </div>
-    </div>
-    <div class="evento">
-      <span class="icono">🪙</span>
-      <div>
-        <h3>FASE 2: Token Comunitario</h3>
-        <p>Creación y distribución del token RenovARG en la red Solana.</p>
-      </div>
-    </div>
-    <div class="evento">
-      <span class="icono">📚</span>
-      <div>
-        <h3>FASE 3: Plataforma Educativa</h3>
-        <p>Generación de contenidos sobre energías renovables y participación ciudadana.</p>
-      </div>
-    </div>
-    <div class="evento">
-      <span class="icono">🗳️</span>
-      <div>
-        <h3>FASE 4: Gobernanza Comunitaria</h3>
-        <p>Implementación de votaciones en plataformas como Snapshot o Realms.</p>
-      </div>
-    </div>
-    <div class="evento">
-      <span class="icono">🔌</span>
-      <div>
-        <h3>FASE 5: Integración con Servicios</h3>
-        <p>Explorar alianzas para utilizar el token en proyectos sustentables reales.</p>
-      </div>
-    </div>
+
+  <div class="timeline-item">
+    <h3>🚀 Abril 2025 – Lanzamiento inicial</h3>
+    <p>Publicación del sitio web, whitepaper y redes sociales.</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>👥 Mayo 2025 – Construcción de comunidad</h3>
+    <p>Convocatoria abierta a educadores, técnicos y voluntarios.</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>🎓 Junio 2025 – Ciclo educativo</h3>
+    <p>Iniciamos la creación de contenidos formativos gratuitos en redes y YouTube.</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>🪙 Julio 2025 – Lanzamiento del token RenovARG</h3>
+    <p>Token comunitario sobre red Solana para recompensar participación.</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>📊 Agosto 2025 – Módulo de gobernanza</h3>
+    <p>Pruebas iniciales con plataformas como Snapshot o Realms.</p>
+  </div>
+
+  <div class="timeline-item">
+    <h3>🌍 Septiembre 2025 – Apertura internacional</h3>
+    <p>Versión en inglés del sitio. Convocatoria a comunidades LATAM.</p>
   </div>
 </section>
-
  
   <section id="equipo" class="equipo-section py-12 px-6 bg-white text-center">
   <h2 class="text-3xl font-bold text-gray-800 mb-6">👥 Equipo y Comunidad</h2>
@@ -725,6 +731,19 @@
   <p class="frase-impacto">🤝 Si hay transparencia, hay confianza. Si hay confianza, hay comunidad.</p>
 </section>
   </footer>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  document.querySelectorAll('.timeline-item').forEach(item => {
+    observer.observe(item);
+  });
+</script>
 
 </body>
 </html>
