@@ -442,6 +442,116 @@
     <p>Conocé el documento fundacional de nuestro proyecto:</p>
     <a class="btn" href="assets/Whitepaper_RenovARG_Version_Final.pdf" target="_blank">📄 Leer el Whitepaper</a>
   </section>
+<style>
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #00bcd4;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .timeline-entry {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .timeline-entry.left {
+    left: 0;
+  }
+
+  .timeline-entry.right {
+    left: 50%;
+  }
+
+  .timeline-entry::before {
+    content: "🔵";
+    position: absolute;
+    top: 20px;
+    right: -14px;
+    font-size: 18px;
+  }
+
+  .timeline-entry.right::before {
+    left: -14px;
+    right: auto;
+  }
+
+  .timeline-entry h3 {
+    margin-top: 0;
+    color: #00796b;
+  }
+
+  .timeline-entry p {
+    margin-bottom: 0;
+    color: #004d40;
+  }
+
+  @media screen and (max-width: 768px) {
+    .timeline-entry {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .timeline-entry.left,
+    .timeline-entry.right {
+      left: 0;
+    }
+
+    .timeline::after {
+      left: 20px;
+    }
+
+    .timeline-entry::before {
+      left: 0;
+    }
+  }
+</style>
+
+<section id="roadmap">
+  <h2>📘 Roadmap RenovARG</h2>
+  <div class="timeline">
+
+    <div class="timeline-entry left">
+      <h3>✅ Fase 1 – Lanzamiento Digital (abril 2025)</h3>
+      <p>Creación del sitio web, redes sociales y whitepaper. Inicio de comunidad y campaña educativa.</p>
+    </div>
+
+    <div class="timeline-entry right">
+      <h3>🔄 Fase 2 – Token Comunitario</h3>
+      <p>Lanzamiento oficial del token en Solana. Casos de uso: educación, recompensas y participación.</p>
+    </div>
+
+    <div class="timeline-entry left">
+      <h3>🧠 Fase 3 – Plataforma Educativa</h3>
+      <p>Desarrollo de módulos educativos, foros de intercambio y contenidos accesibles para todo el país.</p>
+    </div>
+
+    <div class="timeline-entry right">
+      <h3>🌱 Fase 4 – Comunidad Activa</h3>
+      <p>Activación de votaciones comunitarias (Snapshot/Realms) y primeras recompensas simbólicas.</p>
+    </div>
+
+    <div class="timeline-entry left">
+      <h3>🚀 Fase 5 – Expansión Regional</h3>
+      <p>Colaboraciones con instituciones educativas y proyectos sustentables en distintas provincias.</p>
+    </div>
+
+  </div>
+</section>
 
   <!-- Roadmap -->
   <section class="roadmap" id="roadmap">
