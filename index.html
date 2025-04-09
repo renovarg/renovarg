@@ -376,60 +376,6 @@
 .novedades a:hover {
   text-decoration: underline;
 }
-    .timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 30px;
-  text-align: left;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.evento {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  background: #ffffffcc;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.icono {
-  font-size: 2rem;
-  margin-top: 4px;
-  color: #00a389;
-  flex-shrink: 0;
-}
-
-.evento h3 {
-  margin: 0;
-  font-size: 1.3rem;
-  color: #004d40;
-}
-
-.evento p {
-  margin: 8px 0 0;
-  font-size: 1rem;
-  color: #003f3f;
-}
-    .timeline-item {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.timeline-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.timeline-item:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
   </style>
 </head>
 <body>
@@ -496,121 +442,13 @@
     <p>Conocé el documento fundacional de nuestro proyecto:</p>
     <a class="btn" href="assets/Whitepaper_RenovARG_Version_Final.pdf" target="_blank">📄 Leer el Whitepaper</a>
   </section>
-<style>
-  .timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
-  }
 
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: #00bcd4;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-  }
-
-  .timeline-entry {
-    padding: 20px 40px;
-    position: relative;
-    width: 50%;
-    box-sizing: border-box;
-  }
-
-  .timeline-entry.left {
-    left: 0;
-  }
-
-  .timeline-entry.right {
-    left: 50%;
-  }
-
-  .timeline-entry::before {
-    content: "🔵";
-    position: absolute;
-    top: 20px;
-    right: -14px;
-    font-size: 18px;
-  }
-
-  .timeline-entry.right::before {
-    left: -14px;
-    right: auto;
-  }
-
-  .timeline-entry h3 {
-    margin-top: 0;
-    color: #00796b;
-  }
-
-  .timeline-entry p {
-    margin-bottom: 0;
-    color: #004d40;
-  }
-
-  @media screen and (max-width: 768px) {
-    .timeline-entry {
-      width: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    .timeline-entry.left,
-    .timeline-entry.right {
-      left: 0;
-    }
-
-    .timeline::after {
-      left: 20px;
-    }
-
-    .timeline-entry::before {
-      left: 0;
-    }
-  }
-</style>
-
-<!-- Roadmap visual con íconos -->
-<section class="roadmap" id="roadmap">
-  <h2>📘 Hoja de Ruta</h2>
-  <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
-
-  <div class="timeline-item">
-    <h3>🚀 Abril 2025 – Lanzamiento inicial</h3>
-    <p>Publicación del sitio web, whitepaper y redes sociales.</p>
-  </div>
-
-  <div class="timeline-item">
-    <h3>👥 Mayo 2025 – Construcción de comunidad</h3>
-    <p>Convocatoria abierta a educadores, técnicos y voluntarios.</p>
-  </div>
-
-  <div class="timeline-item">
-    <h3>🎓 Junio 2025 – Ciclo educativo</h3>
-    <p>Iniciamos la creación de contenidos formativos gratuitos en redes y YouTube.</p>
-  </div>
-
-  <div class="timeline-item">
-    <h3>🪙 Julio 2025 – Lanzamiento del token RenovARG</h3>
-    <p>Token comunitario sobre red Solana para recompensar participación.</p>
-  </div>
-
-  <div class="timeline-item">
-    <h3>📊 Agosto 2025 – Módulo de gobernanza</h3>
-    <p>Pruebas iniciales con plataformas como Snapshot o Realms.</p>
-  </div>
-
-  <div class="timeline-item">
-    <h3>🌍 Septiembre 2025 – Apertura internacional</h3>
-    <p>Versión en inglés del sitio. Convocatoria a comunidades LATAM.</p>
-  </div>
-</section>
- 
+  <!-- Roadmap -->
+  <section class="roadmap" id="roadmap">
+    <h2>📘 Hoja de Ruta</h2>
+    <p>Estos son los hitos que marcarán nuestro camino hacia una comunidad más sustentable, activa y conectada:</p>
+    <img src="assets/hoja de ruta.png" alt="Hoja de ruta de RenovARG" class="roadmap-img">
+  </section>
   <section id="equipo" class="equipo-section py-12 px-6 bg-white text-center">
   <h2 class="text-3xl font-bold text-gray-800 mb-6">👥 Equipo y Comunidad</h2>
 
@@ -654,7 +492,6 @@
   </ul>
 
   <p>Este token es más que un activo digital: es una herramienta para impulsar el cambio desde el conocimiento y la acción colectiva.</p>
-   
     <section id="faq" class="mt-12 p-6 rounded-2xl shadow-md bg-white bg-opacity-80 backdrop-blur-md">
   <h2 class="text-2xl font-bold text-center text-green-800 mb-6">💬 Preguntas Frecuentes (FAQ)</h2>
 
@@ -687,87 +524,8 @@
     <summary class="cursor-pointer font-semibold text-gray-800">¿El token tiene valor económico?</summary>
     <p class="mt-2 text-gray-700">Su valor principal es educativo y comunitario. Eventualmente, puede tener aplicaciones que otorguen valor simbólico o utilitario dentro del ecosistema RenovARG.</p>
   </details>
-      
 </section>
-    <style>
-  .legal {
-    padding: 40px 20px;
-    background-color: #ffffffdd;
-    border-radius: 16px;
-    max-width: 900px;
-    margin: 60px auto;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-size: 1.1em;
-    color: #003f3f;
-  }
-
-  .legal h2 {
-    color: #00695c;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .legal p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
-  }
-
-  .legal ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1rem;
-  }
-
-  .legal li {
-    margin-bottom: 10px;
-  }
-      .legal-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.legal .card {
-  background-color: #f0fdfc;
-  border: 1px solid #00a38933;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.legal .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-</style>
-
-<section id="legal" class="legal">
-  <h2>⚖️ Sustento Legal y Ético</h2>
-  <p>
-    RenovARG nace como un proyecto educativo y comunitario sin fines de lucro,
-    comprometido con los principios de transparencia, participación y sostenibilidad.
-  </p>
-
-  <p>
-    Este espacio digital tiene como propósito promover el conocimiento sobre energías renovables
-    y la participación ciudadana. No se realizan promesas financieras ni inversiones con garantía de retorno.
-  </p>
-
-  <ul>
-    <li>📌 <strong>Legalidad:</strong> Actuamos dentro del marco legal argentino y respetamos las normas internacionales relacionadas con la educación, el ambiente y la tecnología.</li>
-    <li>🌿 <strong>Ética:</strong> Todo lo que compartimos está orientado a fomentar un futuro sustentable, con responsabilidad social y ambiental.</li>
-    <li>🧩 <strong>Transparencia:</strong> Toda la documentación, como el whitepaper, tokenomics y roadmap, está públicamente disponible para revisión.</li>
-  </ul>
-
-  <p>
-    📢 <strong>Este proyecto NO representa una inversión financiera.</strong><br>
-    Es una herramienta de participación, aprendizaje y colaboración.
-  </p>
 </section>
-
   <section class="novedades">
   <h2>📰 Novedades y Actualizaciones</h2>
   <ul>
@@ -777,14 +535,7 @@
     <li><strong>Abr 2025:</strong> Creación de la cuenta oficial en X (Twitter): <a href="https://x.com/ArgRenov" target="_blank">@RenovARG</a>.</li>
   </ul>
 </section>
-<!-- Nueva sección Legal y Ética -->
-<section id="legal" class="legal">
-  ...
-</section>
-
-<!-- Sección de contacto -->
 <section id="contacto" class="contacto">
-
   <h2>📬 Contactanos</h2>
   <p>¿Querés sumar tu energía? Escribinos y conectemos ideas.</p>
   <form action=https://formspree.io/f/xnnpornn method="POST">
@@ -818,19 +569,6 @@
   <p class="frase-impacto">🤝 Si hay transparencia, hay confianza. Si hay confianza, hay comunidad.</p>
 </section>
   </footer>
-<script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  });
-
-  document.querySelectorAll('.timeline-item').forEach(item => {
-    observer.observe(item);
-  });
-</script>
 
 </body>
 </html>
