@@ -122,6 +122,28 @@
 .boton-volver:hover {
   background-color: #00695c;
 }
+.navegacion-blog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #e0f2f1;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  max-width: 90%;
+  font-weight: bold;
+}
+
+.navegacion-blog a {
+  color: #004d40;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navegacion-blog a:hover {
+  color: #00796b;
+}
 
 </style>
 
@@ -133,13 +155,15 @@
     <h1>📰 Blog / Noticias</h1>
     <p class="intro">Novedades, ideas y avances del proyecto RenovARG</p>
     <nav>
-      <a href="index.html">Inicio</a> |
-      <a href="index.html#participar">¿Cómo Participar?</a> |
-      <a href="index.html#tecnica">Sección Técnica</a> |
-      <a href="index.html#equipo">Equipo y Comunidad</a> |
-      <a href="index.html#faq">FAQ</a> |
-      <a href="index.html#contacto">Contacto</a>
-      <a href="blog.html" class="boton-volver">⬅ Volver al blog</a>
+     <div class="navegacion-blog">
+  <a href="index.html">Inicio</a> |
+  <a href="index.html#participar">¿Cómo Participar?</a> |
+  <a href="tecnica.html">Sección Técnica</a> |
+  <a href="equipo.html">Equipo y Comunidad</a> |
+  <a href="faq.html">FAQ</a> |
+  <a href="contacto.html">Contacto</a> |
+  <a href="blog.html">⬅ Volver al blog</a>
+</div>
 
     </nav>
   </header>
