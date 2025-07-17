@@ -34,38 +34,32 @@
 
   <!-- Estilos personalizados -->
   <style>
-    /* TODO: Acá van todos tus estilos, los que ya escribiste están bien. No hace falta que los repitas aquí */
-
     body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #e6f8f8;
-  color: #003f3f;
-  text-align: center;
-  position: relative;
-  overflow-x: hidden;
-}
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6f8f8;
+      color: #003f3f;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
 
-body::before {
-  content: "";
-  background: url('assets/fondo1.png') no-repeat center center fixed;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.15; /* Ajustá este valor para más o menos transparencia */
-  z-index: -1;
-}
+    body::before {
+      content: "";
+      background: url('assets/fondo1.png') no-repeat center center fixed;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.15; /* Ajustá para más o menos transparencia */
+      z-index: -1;
+    }
   </style>
 </head>
 
-
-<!-- Body -->
-  
-<body class="bg-fixed bg-cover bg-center" style="background-image: url('./assets/fondo1.png');">
-
+<body>
   <!-- Contenedor general con fondo blanco translúcido -->
   <div class="bg-white/90 backdrop-blur-md min-h-screen">
 
